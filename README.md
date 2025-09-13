@@ -23,33 +23,3 @@ This project is an **IoT-based health monitoring system** that:
 ```bash
 git clone https://github.com/akshata-13/IOT-Heart-Monitor
 cd IOT-Heart-Monitor
-
----
-
-2️⃣ **Create Environment**
-```bash
-python -m venv venv
-source venv/bin/activate   # Linux/Mac
-venv\Scripts\activate      # Windows
-
-3️⃣** Install Dependencies**
-```bash
-pip install -r requirements.txt
-
-4️⃣ **Firebase Setup**
-```bash
-Create Firebase project with Realtime Database.
-Download your serviceAccountKey.json.
-Place it inside /firebase/ (this file is not uploaded to GitHub).
-
-5️⃣** Train Model**
-```bash
-python train_model.py
-
-6️⃣ **Run IoT Simulator**
-```bash
-python simulator/iot_simulator.py
-
-7️⃣ **Run Dashboard**
-```bash
-streamlit run dashboard/dashboard.py
