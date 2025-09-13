@@ -69,13 +69,13 @@ python train_model.py
 ### 6️⃣ Run IoT Simulator
 
 ```bash
-python simulator/iot_simulator.py
+python iot_simulator.py
 ```
 
 ### 7️⃣ Run Dashboard
 
 ```bash
-streamlit run dashboard/dashboard.py
+streamlit run dashboard.py
 ```
 
 ---
@@ -83,9 +83,13 @@ streamlit run dashboard/dashboard.py
 ## 📊 Dashboard Features
 
 ✔️ **Latest vitals** displayed in cards.
+
 ✔️ **Color-coded prediction** (Green = Normal, Red = At Risk).
+
 ✔️ **Last 5 records table**.
+
 ✔️ **Live charts** for BP, Cholesterol, and Heart Rate.
+
 ✔️ **Explainability insights** (feature impact).
 
 ---
@@ -93,9 +97,3 @@ streamlit run dashboard/dashboard.py
 ## 🔗 IoT Workflow
 
 **Sensor Data (Simulated)** ➝ **Firebase Cloud** ➝ **ML Prediction** ➝ **Streamlit Dashboard**
-
-
-
----
-
-Do you also want me to **embed a polished system architecture diagram** (PNG/SVG) so your GitHub looks like a full professional project?
