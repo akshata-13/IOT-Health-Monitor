@@ -24,7 +24,7 @@ data.fillna(data.median(), inplace=True)
 # Firebase setup
 cred = credentials.Certificate(r"C:\Users\aksha\OneDrive\Documents\iot health\iot-virtualhealth-firebase-adminsdk-fbsvc-189cd6f0b0.json")
 firebase_admin.initialize_app(cred, {
-    'databaseURL': "https://iot-virtualhealth-default-rtdb.firebaseio.com/"
+    'databaseURL': ""
 })
 ref = db.reference("/patients")
 
@@ -46,4 +46,5 @@ while True:
     # Upload to Firebase
     ref.push(record)
     print("Uploaded:", record)
+
     time.sleep(5)
