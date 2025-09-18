@@ -18,7 +18,7 @@ st.set_page_config(
 # Firebase setup
 cred = credentials.Certificate(r"C:\Users\aksha\OneDrive\Documents\iot health\iot-virtualhealth-firebase-adminsdk-fbsvc-189cd6f0b0.json")
 firebase_admin.initialize_app(cred, {
-    'databaseURL': "https://iot-virtualhealth-default-rtdb.firebaseio.com/"
+    'databaseURL': ""
 })
 ref = db.reference("/patients")
 
@@ -91,4 +91,5 @@ while True:
         st.plotly_chart(fig, use_container_width=True)
 
     # Refresh every 5 seconds
+
     time.sleep(5)
